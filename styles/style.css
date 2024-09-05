@@ -2,18 +2,14 @@ body{
       margin: 0;
       padding: 0;
       overflow: hidden;
-      font-family: work sans;
+      font-family: Work sans;
 }
 
 .login {
       display: flex;
       margin: 10px;
-      /* align-items: center; */
+      align-items: center;
       justify-content: space-between;
-      /* font-family: Work sans;
-      font-weight: bold;
-      box-sizing: border-box;
-      height: 660px; */
 }
 
 .section1 {
@@ -21,10 +17,9 @@ body{
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      /* align-self: center; */
+      align-self: center;
       font-size: larger;
-      /* align-content: center; */
-      /* margin: 45px 150px; */
+
 }
 
 h1,
@@ -35,7 +30,6 @@ h4 {
 .form {
       display: flex;
       flex-direction: column;
-      margin: 10px 0;
 }
 
 select,
@@ -56,12 +50,6 @@ select {
       color: black;
       width: 400px;
       height: 80px;
-      /* padding: 10px; */
-}
-
-input {
-   
-      /* border-color: green; */
 }
 
 input:focus{
@@ -72,16 +60,13 @@ input:focus{
 .logbttn {
       background-color: green;
       color: white;
-      transition: letter-spacing 2s, color 5s, font-size 3s  ;
-
+      font-size: large;
 }
-.logbttn:hover{
-      /* transform:  scale(1.2,1.2) rotateX(180deg) rotateY(180deg); */
-      letter-spacing: 3px;
-      font-size: larger;
-      color: black;
 
+.logbttn:focus{
+      color: green;
 }
+
 .footer {
       text-align: center;
       margin: 25px 0;
@@ -98,6 +83,8 @@ a:hover{
 
 .section2 {
       position: relative;
+      top: -10px;
+      right: -10px;
 }
 
 .sec2 {
@@ -105,12 +92,6 @@ a:hover{
       top: -20px;
       right: -20px;
       color: white;
-      /* transform: translate(0px, 100px);
-      transform: rotate(90deg);
-      transform: scale(2,2);
-      transform: skew(20deg, 10deg);
-      transform: matrix(1, 0.3, 0, 1, 0, 0);
-      transform: translate(0px, 100px) rotate(90deg) scale(2,2); */
       transition-property: transform;
       transition-duration: 3s;
       transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -120,31 +101,26 @@ a:hover{
 
 }
 .sec2:hover{
-      /* transform: rotate3d(50deg, 60deg, 20deg); */
-      /* transform: rotateX(100deg); */
-      /* transform: rotateY(10deg); */
-      /* transform: rotateZ(60deg); */
       transform: rotateY(360deg);
       bottom: 20px;
 
 }
+
 .image {
       background-color: green;
 }
 
+.image img{
+      height: 100vh;
+}
+
 .img {
       background: white;
-      /* border: 10px black solid; */
-      /* border-radius: 50%; */
       border-top-left-radius: 50%;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
       height: 200px;
       width: 200px;
-
-      /* margin: 0;
-      padding: 40px 40px 7px 8px; */
-
 }
 
 .text {
@@ -166,8 +142,24 @@ a:hover{
       letter-spacing: 4px;
 }
 
-/* span {
-      font-size: 80px;
-      font-weight: 40px;
-      display: block; */
-/* } */
+
+
+@media only screen and (max-width: 900px) {
+      .section1{
+            width: 80%;
+      }
+
+      .drop{
+            width: auto;
+      }
+
+      .footer p{
+            display: flex;
+            flex-direction: column;
+      }
+
+      .section2{
+            display: none;
+      }
+     
+}
